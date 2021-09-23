@@ -1,7 +1,7 @@
-[toc]
+[TOC]
 # maven
 ## maven是什么
-* java平台的自动化构建工具，make->ant->maven->gradle
+* maven是java平台的自动化构建工具，构建工具的历史是make->ant->maven->gradle
 * 构建的定义
   >以java源文件、框架配置文件、jsp、-html、图片等资源为原材料，去生产一个可以运行的项目的过程。(编译、部署、搭建)  
   > 编译：java源文件->编译->class字节码文件->交给jvm执行  
