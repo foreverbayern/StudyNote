@@ -45,3 +45,10 @@
     > 通过hash值回退: git reset --hard hash值  
     > 通过^,只能回退不能向前:git reset --hard HEAD^ 往回退一步,如果想回退2步，就使用HEAD^^  
     > 通过~,回退是三步,git reset --hard HEAD~3  
+
+参数hard和soft和mixed对比：
+soft：仅仅在本地库移动HEAD指针。那么暂存区相对于本地库而言，就是前进了，所以用git status，会发现有add的文件。  
+mixed：在本地库移动HEAD指针，重置暂存区，暂存区也重置了，那么工作区的代码，相当于都没add进暂存区，用git status会看到有红色的文件。  
+hard：在本地库移动HEAD指针，重置暂存区，重置工作区  
+
+8. git diff: 比较文件的差异
