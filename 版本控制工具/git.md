@@ -13,4 +13,35 @@
 1. 工作区 ：写代码的地方
 2. 暂存区 ：临时存储，打算要提交的地方
 3. 本地库 ：历史版本  
-工作区用git add将代码放入暂存区，在暂存区用git commit将代码加入本地库
+工作区用git add将代码放入暂存区，在暂存区用git commit将代码加入本地库 
+
+## git命令行操作
+### 本地库操作
+1. 本地库初始化： git init ；生成.git目录，存放的是本地库相关的子目录和文件，不要删除和修改
+2. 设置签名： 形式      用户名：tom，Email地址：good@11.com  作用是区分不同开发人员的身份；  
+   > 命令  
+   >> 项目级别/仓库级别:仅在当前本地库范围内有效  
+   >>> git config user.name tom_pro  
+   >>> git config user.email tom@11.com  
+
+   > 命令
+   >> 系统用户级别：登录当前操作系统的用户范围  
+   >>> git config **--global** user.name tom_pro  
+   >>> git config **--global** user.email tom@11.com  
+
+   > 级别优先级：就近原则  
+   
+   可以在.git/config下查看到
+
+3. git status  
+![](images/3.png)
+第一行，在master分支上；第二行，现在没啥提交的  
+4. git rm --cached good.txt 将暂存区的文件移除  
+5. git log --pretty=oneline 可以查看提交的日志
+![](images/4.png)
+那串值其实是hash值，HEAD是指针，指向当前的版本
+6. git reflog 可以看到HEAD的下标
+7. git reset ，版本回退或向前
+    > 通过hash值回退: git reset --hard hash值  
+    > 通过^,只能回退不能向前:git reset --hard HEAD^ 往回退一步,如果想回退2步，就使用HEAD^^  
+    > 通过~,回退是三步,git reset --hard HEAD~3  
