@@ -54,4 +54,9 @@ hard：在本地库移动HEAD指针，重置暂存区，重置工作区
 8. git diff: 比较文件的差异
 
 ## 分支
+### 命令
+1. git branch -v ： 查看所有分支
+2. git branch hot_fix ：创建一个新分支
+3. git checkout hot_fix 切换分支
+4. 合并分支，先切换到接收修改的分支上,然后解决冲突 git merge 另一个分支名字
 
