@@ -52,8 +52,13 @@ mixed：在本地库移动HEAD指针，重置暂存区，暂存区也重置了�
 hard：在本地库移动HEAD指针，重置暂存区，重置工作区  
 
 8. git diff: 比较文件的差异
-9. git rebase: 假设目前只有一个分支，开发人员的工作流程是
-   > 
+9. git rebase: 假设目前只有一个分支，开发人员的工作流程是  
+   > 1. 切到master分支，git pull拉取最新的分支状态  
+   > 2. 本地创建一个开发分支
+   > 3. 开发完成后，切到master，git pull拉取最新分支状态
+   > 4. 切回local分支，通过git rebase -i 将本地的多次提交合并为一个，简化提交历史，本地有多个提交时，如果不进行这一步，在git rebase master时会多次解决冲突(有可能每一个提交都会有一个解决冲突)  
+   > 5. git rebase master 将master最新的分支同步到本地，这个过程可能需要手动解决冲突  
+   > 6. 切换到master，git merge将本地local分支内容合并到mater分支
 
 ## 分支
 ### 命令
