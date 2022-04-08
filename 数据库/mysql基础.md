@@ -116,3 +116,9 @@ call real_update_credit_seal_apply_code();
 drop PROCEDURE update_seal_apply_code;
 drop PROCEDURE real_update_credit_seal_apply_code;
 ```
+
+## mysql 语句
+### 查看表的字段
+```
+select GROUP_CONCAT(COLUMN_NAME) from information_schema.COLUMNS where table_name = 'activity_info';  
+```
