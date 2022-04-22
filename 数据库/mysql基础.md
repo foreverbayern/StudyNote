@@ -122,3 +122,8 @@ drop PROCEDURE real_update_credit_seal_apply_code;
 ```
 select GROUP_CONCAT(COLUMN_NAME) from information_schema.COLUMNS where table_name = 'activity_info';  
 ```
+### 日期
+```sql
+-- 加天数
+DATE_ADD(approve_stamp_date,INTERVAL apply_term MONTH)
+```
