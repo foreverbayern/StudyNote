@@ -127,3 +127,12 @@ select GROUP_CONCAT(COLUMN_NAME) from information_schema.COLUMNS where table_nam
 -- 加天数
 DATE_ADD(approve_stamp_date,INTERVAL apply_term MONTH)
 ```
+
+### mysql执行sql脚本
+```
+登录到mysql命令行
+mysql -uxxxx -p
+
+然后
+source F:\hello world\niuzi.sql
+```
