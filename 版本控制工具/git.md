@@ -76,3 +76,10 @@ hard：在本地库移动HEAD指针，重置暂存区，重置工作区
 3. 哈希算法确定，输入数据变化，输出数据一定有变化。
 4. 哈希算法不可逆
 5. git底层采用sha-1算法
+
+
+### 问题
+```
+ssh: connect to host github.com port 22: Connection refused
+```
+这个问题应该是墙比较敏感的问题,所以在**https://ipaddress.com/**上查询github.com的ip地址，再将写入到hosts文件中。hosts默认地址**C:\Windows\System32\drivers\etc**
