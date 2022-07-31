@@ -68,5 +68,18 @@ Jack always gets to work early.
 对于一般现在时的提问：  
 ![](./images/11.png) 
 
-如果时特殊疑问句：  
+如果是特殊疑问句：  
 Where do you wash your hair?  
+
+```
+这些verbs 不能用在现在进行时  
+
+like    want    know    understand  remember
+prefer  need    mean    believe     forget
+```  
+
+i have == i have got 意义一样  
+![](./images/12.png) 
+
+对他的提问  
+![](./images/13.png) 
