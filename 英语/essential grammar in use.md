@@ -174,3 +174,25 @@ Tom started his new job three weeks ago = three weeks before now.
 一般过去式和现在完成时区别：
 1. 不要在现在完成时里用已经结束的时间。
 i saw Paula yesterday. 不能说 i have seen paula yesterday.
+
+
+### passive 被动语态
+1. 一般现在时和一般过去时的被动语态.
+
+![](./images/19.png)  
+
+The office is cleaned every day.  
+
+The office was cleaned yesterday.
+
+对于born，出生来说，必须使用过去时
+I was born in Berlin in 1993.  Where were you born?
+
+passive + by..
+The telephone was invented by Bell in 1876.
+
+2. 现在进行时、现在完成时
+is/are being（现在进行时被动）：The door is being painted.
+
+
+has/have been（现在完成时被动）: The door has been painted.
