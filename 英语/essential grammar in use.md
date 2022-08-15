@@ -196,3 +196,25 @@ is/are being（现在进行时被动）：The door is being painted.
 
 
 has/have been（现在完成时被动）: The door has been painted.
+
+
+### 一般将来时 future
+
+1. 可以使用现在进行时表示将来,一般是已经安排好的，计划好的事情,不是临时决定：
+I'm not working next week.
+
+2. 对于时刻表、节目单、火车、汽车时间点，用一般时表将来：
+The train arrives at 7.30. 
+What time does the film finish?
+
+3. I'm going to do something,从过去开始就决定了要做的事
+i'm going to bug some books tomorrow. 
+Sarah is going to sell her car.
+
+4. 如果有事情快要发生了，我们现在看得到，也用is going to
+Look at the sky! it's going to rain.
+
+5. will/shall
+shall只能用于第一人称,will 都可以；他们两个都是用于没有计划的事。
+
+经常用的: i think i wll / i don't think i will.
