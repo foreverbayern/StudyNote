@@ -84,6 +84,7 @@ i have == i have got 意义一样
 对他的提问  
 ![](./images/13.png) 
 
+## past
 ### past simple 一般过去时
 ![](./images/14.png) 
 
@@ -131,6 +132,7 @@ It was raining,so we did't go out.
     > 描述过去同时发生的行为：Yesterday,i was cooking while my sister was washing the dishes.
 
 
+## perfect
 ### present perfect 现在完成时
 ![](./images/18.png)  
 
@@ -176,7 +178,7 @@ Tom started his new job three weeks ago = three weeks before now.
 i saw Paula yesterday. 不能说 i have seen paula yesterday.
 
 
-### passive 被动语态
+## passive 被动语态
 1. 一般现在时和一般过去时的被动语态.
 
 ![](./images/19.png)  
@@ -197,7 +199,7 @@ is/are being（现在进行时被动）：The door is being painted.
 
 has/have been（现在完成时被动）: The door has been painted.
 
-
+## future
 ### 一般将来时 future
 
 1. 可以使用现在进行时表示将来,一般是已经安排好的，计划好的事情,不是临时决定：
@@ -218,3 +220,116 @@ Look at the sky! it's going to rain.
 shall只能用于第一人称,will 都可以；他们两个都是用于没有计划的事。
 
 经常用的: i think i wll / i don't think i will.
+
+## Modals/imperative  情态动词/祈使句
+
+### might
+might + 动词原形
+i might = it is possible that i will.
+就是说我有可能会做. 但不是一定做，是没有确定的
+I might go to the cinema this evening, but i'm not sure.
+
+否定形式就是：
+i might not go to work tomorrow.
+
+同样的,可以使用may来替换，may=might.
+
+May i ask a question?
+
+### can / could
+can/could + 动词原形
+
+i can do sth = i know how to do it,or it is possible for me to do it.
+
+i can play the piano,My brother can play the piano too.
+
+提问：
+Can you swim?
+
+如果是past状态,则用could/couldn't
+
+When i was young, i could run very fast.
+
+### must / mustn't / don't need to
+i must = i need
+I'm very hungry, i must eat something.
+如果是past,因为must没有过去时,所以我们需要用had to
+I was very hungry,i had to eat something.
+
+mustn't = must not
+I must go,i mustn't be late.
+
+don't need to = it is not necessary
+i don't need to go yet,i can stay a little longer.
+
+### should
+should + 动词原形
+
+should do sth = it is a good thing to do,it is the right thing to do
+
+It's a good film. You should go and see it.
+
+shouldn't = should not
+Tom shouldn't go to bed so late.
+
+我们经常用： i think....should...
+i think Lisa should buy some new clothes.
+提问的话：
+Do you think ... should...?
+Do you think i should buy this hat?
+
+Must要比should更加强烈.
+
+should可以和ought to 互换.
+
+### i have to 不得不
+在过去时中：就会变成 had to
+
+提问的话：
+Do i have to...?
+
+must 和 have to的区别
+1. must侧重说话者的主观看法,认为有必要有义务去做某事, have to 则重于客观需要,有不得不、被迫的意义.
+2. 时态上不同,must只有现在时一种形式,have to有多种，表示过去用had to
+
+### Would you like...? i'd like...
+Would you like = Do you want..
+Would you like some coffee? 你想要点咖啡吗
+
+Would you like to 可以邀请某人：
+Would you like to go for a walk?
+
+i'd like 是i want 的礼貌的说法 = i would like
+
+Would you like 和 Do you like 的区别：
+Would you like是问你想要...   Do you like 是问你喜欢...?
+
+
+### Do this! Don't do that! Let's do this!
+祈使句
+我们用Come/look/go/wait/be 等， 当我们告诉某人做某事时
+Come here and look at this!
+Go away!
+please be quiet.
+同样的：
+Have a good time!
+Have fun!
+
+当告诉人不要做某事时：
+Be careful! Don't fall.
+
+Let's = let us.  当你想人和你一起做某事时
+Let's go out.
+否定的话：
+Let's not go out.
+
+### i used to
+我曾经...,但是现在不了
+Helen used to have a piano , but she sold it a few years ago.
+否定形式:
+I didn't use to like tomatoes.
+提问：
+Did you use to live...
+
+used to只能用在过去
+
