@@ -333,3 +333,100 @@ Did you use to live...
 
 used to只能用在过去
 
+
+## There be句型
+There is/are
+There was/were
+There has/have been
+There will be
+
+It's nice/easy/safe to...
+It's nice to see you again.
+
+
+## Auxiliary verbs 助动词
+助动词与实义动词是相对的，协助主要动词构成谓语动词词组的叫助动词。 助动词就像僚机
+
+助动词的作用：
+1. 表示时态：He is singing.
+2. 表示语态：He was sent to England.
+3. 构成疑问句：Do you like college life?
+4. 与否定副词not合用：I don't like him.
+5. 加强语气：Do come to the party tomorrow evening.
+
+常用的助动词：
+be is am are was were
+do does did
+have has had
+shall should
+will would
+
+It's a beautiful day,isn't it?   一个人说的,前一句和后一句要反过来,前面肯定,后面就是not的反问,回答的话，就是回答他第一句,Yes,it's perfect! 不用管他的反问.
+
+That isn't your car,is it?  No,it's my mother's.
+
+
+too/either
+放在句子的最后， too用在positive 肯定中， either用在negative 否定中
+i'm happy.  i'm happy too.
+i'm not happy.  i'm not happy either.
+
+
+so am i / neither do i
+so am i = i am too .     neither am i = i'm not either. 我们还可以用Nor 代替neither. Nor am i.
+
+## 提问
+Silvia saw Paul.
+对Silvia提问：Who saw Paul?
+对Paul提问：Who did silvia see?
+
+疑问词代替的是主语,那后面的句式不变,如果代替的是宾语,则需要修改句式：
+What happened?  
+Who did you meet yesterday?
+
+
+在问句中, Who/What/Where/which开头的，通常以介词to/from/with结尾
+Where are you from?
+What was he afraid to?
+
+
+What is it like? = 告诉我sth咋样,是好的还是坏的，是大的还是小的
+同理：What are they like 也一样，许哟啊结合语境
+
+What + 名词：What color is your car?
+What 后不接名词：What is your favourite color?
+
+Which + 名词：Which train did you catch?
+Which 后不接名词,不接人：Which is bigger?- Canada or US?
+
+Who 是用来接人的：Who is taller - Joe or Gary?
+
+
+What 和 Which的区别： Which是在少数可能性中做选择,而What范围则更大：
+There are four umbrellas here. Which is yours? 四把伞，其中一把
+What's the capital of China? 中国有很多城市,哪个是首都.
+
+
+How..?   how + adj/adv (how tall/old/often)
+How far 问距离。 How often 问频率 How long 问时间  How much 问多少钱
+How long have they been married? 他们结婚多少年了
+
+How long does it take from ..to..?
+How long does it take by plane from New York to Washington?
+It takes ten minutes by car from my house to the station.
+
+How long does it take to do sth  take后面的动作需要花多少时间
+How long does it take to cross the Atlantic by ship? 乘船横渡大西洋需要多久
+It takes a long time to learn a language. 学习语言是需要很长的时间
+
+
+Do you know where ...?
+正常情况下, Where is Paula? 但是如果是这个句式：Do you know where Paula is?
+![](./images/20.png)  
+
+同样的 Where does he live?
+Do you know where he lives? 注意这样后面是lives。
+
+在这些句子里if和whether可以互换
+Do you know if they have got a car?
+Do you know whether they have got a car?
