@@ -430,3 +430,29 @@ Do you know where he lives? 注意这样后面是lives。
 在这些句子里if和whether可以互换
 Do you know if they have got a car?
 Do you know whether they have got a car?
+
+
+## to do 或者 doing
+![](./images/21.png)  
+![](./images/22.png)  
+
+
+```
+want / plan / decide / try
+hope / expect / offer(提出) /forget       +  to
+need / promise / refuse / learn
+```
+
+```
+enjoy / stop                    + -ing
+mind(介意) / finish / suggest
+```
+
+```
+like / love / start   continue  + -ing / to do
+prefer / hate / begin 
+```
+
+```
+would like/love/prefer/hate  + to do
+```
