@@ -136,3 +136,96 @@ mysql -uxxxx -p
 然后
 source F:\hello world\niuzi.sql
 ```
+
+## mysql主从
+数据库主库对外提供读写操作，从库对外提供读操作。
+
+### 为啥需要主从
+1. 高可用，用于故障切换，比如主库挂了，可以切从库。
+2. 读写分离，提供查询服务，减少主库压力，提升性能。
+3. 备份数据，避免影响业务。
+
+### 原理
+1. 主数据库有binlog二进制文件，记录了所有的增删改sql语句(binlog线程)
+2. slave把master的binlog文件的sql语句复制到自己的中继日志relay log(io 线程)
+3. slave的relay log重做日志文件，再执行一次这些sql语句。(sql 执行线程)
+
+![](./image/1.png)  
+
+如何保证主从一致的，说明情况不一致：
+通过binlog保持一致。
+
+不一致的情况：
+1. master和slave在同步数据过程中中断，数据就会丢失。 所以master和slave之间维持一个长链接。
+2. 如果slave和master选的索引不一致，可能会导致数据不一致，比如一条删除语句，a，b两个字段作为条件的limit 1. 这时master有索引a，所以limit出来的数据 可能和 slave有索引b limit出来的数据不一致。  当然原因还是因为binlog的格式设置为statement（记录sql原文）了，把格式改成row（记录删除的主键id信息）就可以了, 但是row格式空间，所以最后折中用mixed格式，当mysql判断数据可能不一致，就用row格式，否则就用statement格式。
+
+### 主从延迟的原因和解决方案
+定义：
+1. master执行完一个事务，写入binlog，这个时刻为T1.
+2. master同步给slave，slave接收完这个binlog的时刻，为T2.
+3. 从库执行完这个事务，时刻为T3.
+
+主从延迟，指同一个事务里，T3-T1的差值。
+
+导致主从延迟的情况：
+1. 从库的机器比主库性能差
+2. 从库的压力大，也会导致主从延迟，因为从库查询消耗大量cpu，影响同步， 可以搞一主多从架构，多几个从库分担读压力。
+3. 大事务也会导致主从延迟。
+4. 网络延迟。
+5. 低版本的mysql只支持单线程复制，可以换更高版本的mysql，支持多线程复制。
+
+
+配置：
+主机器的配置：
+修改master节点的里/etc/mysql/my.cnf文件
+```
+[mysqld]
+log-bin=mysql-bin # 开启 binlog
+server-id=1 # 当前server在cluster中的id，必须保证在cluster中唯一
+#只保留7天的二进制日志，以防磁盘被日志占满(可选)
+expire-logs-days = 7
+#不备份的数据库 （可选）
+binlog-ignore-db=information_schema  
+binlog-ignore-db=performation_schema
+binlog-ignore-db=sys
+```
+
+接着创建一个用于slave的用户
+```
+CREATE USER 'slave' @'%' IDENTIFIED BY '123456';
+GRANT SELECT, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'slave' @'%';
+#刷新权限
+FLUSH PRIVILEGES;
+
+查看master状态，会有file和position值
+show master status;
+```
+
+接着时slave节点，my.cnf添加内容
+```
+[mysqld]
+server-id=2
+relay_log=relay-log
+#开启只读 意味着当前的数据库用作读，当然这也只会影响到非root的用户，如果使用root用户操作本库是不会有影响的
+read_only=ON
+```
+
+设置完成后，启动slave server
+```
+CHANGE MASTER TO
+MASTER_HOST='mysql-master', #因为用的docker，如果是实体机,这儿填对应ip
+MASTER_USER='slave',
+MASTER_PASSWORD='123456',
+MASTER_LOG_FILE='mysql-bin.000001', #上面show master status的值
+MASTER_LOG_POS=154; #上面show master status的值
+```
+
+然后启动slave
+```
+start slave;
+
+show slave status;
+主要看slave_io_running 和 slave_sql_running是否都是yes，是yes则说明成功了,如果slave_io_running是no，可能是
+1. 两台节点的server_id相同
+2. 两台节点的数据库uuid相同,就是/var/lib/mysql下的auto.cnf文件里的值相同，修改为不同就行了.
+```
